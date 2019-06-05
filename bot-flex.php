@@ -38,8 +38,8 @@ $jsonFlex = [
     },
     "hero": {
       "type": "image",
-      "url": "https://sv1.picz.in.th/images/2019/06/06/1zBQwy.jpg",
-      "size": "full",
+      "url": "https://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
+      "size": "md",
       "aspectRatio": "1:1",
       "aspectMode": "fit",
       "action": {
