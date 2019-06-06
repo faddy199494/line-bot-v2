@@ -118,7 +118,18 @@ $jsonFlex = [
         "layout" => "horizontal",
         "contents" => [
           [
-            "type" => "button",
+           "type" => "text",
+            "text" => "เข้าเว็บไซต์",
+            "size" => "lg",
+            "align" => "start",
+            "color" => "#0084B6",
+            "action" => [
+              "type" => "uri",
+              "label" => "เข้าเว็บไซต์",
+              "uri" => "http://srw889th.com/"
+           ];
+           [
+            "type" => "text",
             "text" => "เข้าเว็บไซต์",
             "size" => "lg",
             "align" => "start",
