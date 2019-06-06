@@ -66,7 +66,6 @@ $jsonFlex = [
         "type" => "box",
         "layout" => "vertical",
         "contents" => [
-          ],
           [
             "type" => "separator",
             "color" => "#C3C3C3"
@@ -120,14 +119,14 @@ $jsonFlex = [
         "contents" => [
           [
             "type" => "text",
-            "text" => "เข้าเว็บไซต์",
+            "text" => "View Details",
             "size" => "lg",
             "align" => "start",
             "color" => "#0084B6",
             "action" => [
               "type" => "uri",
-              "label" => "เข้าเว็บไซต์",
-              "uri" => "http://srw889th.com/",
+              "label" => "View Details",
+              "uri" => "https://google.co.th/"
             ]
           ]
         ]
