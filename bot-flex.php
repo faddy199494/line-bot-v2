@@ -12,43 +12,42 @@ $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
 $jsonFlex = [
-{
   "type": "bubble",
-  "hero": {
+  "hero": [
     "type": "image",
     "url": "https://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
     "size": "full",
     "aspectRatio": "1:1",
     "aspectMode": "cover",
-    "action": {
+    "action": [
       "type": "uri",
       "label": "line@",
       "uri": "https://line.me/R/ti/p/@sny7726x"
-    }
-  },
-  "body": {
+    ]
+  ],
+  "body": [
     "type": "box",
     "layout": "vertical",
     "contents": [
-      {
+      [
         "type": "text",
         "text": "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
         "weight": "bold",
         "align": "center",
         "size": "sm"
-      },
-      {
+      ],
+      [
         "type": "box",
         "layout": "vertical",
         "margin": "lg",
         "spacing": "sm",
         "contents": [
-          {
+          [
             "type": "box",
             "layout": "baseline",
             "spacing": "sm",
             "contents": [
-              {
+              [
                 "type": "text",
                 "text": "😍สมัครได้เเล้ววันนี้ฟรี 100 Credit😍",
                 "wrap": true,
@@ -56,19 +55,19 @@ $jsonFlex = [
                 "size": "sm",
                 "align": "center",
                 "flex": 5
-              }
+              ]
             ]
-          }
+          ]
         ]
-      }
+      ]
     ]
-  },
-  "footer": {
+  ],
+  "footer": [
     "type": "box",
     "layout": "vertical",
     "spacing": "sm",
     "contents": [
-      {
+      [
         "type": "button",
         "style": "link",
         "height": "sm",
@@ -76,11 +75,11 @@ $jsonFlex = [
           "type": "uri",
           "label": "สมัครสมาชิก",
           "uri": "https://line.me/R/ti/p/@sny7726x"
-        },
+        ],
         "color": "#03FF0C",
         "style": "secondary"
-      },
-      {
+      ],
+      [
         "type": "button",
         "style": "link",
         "height": "sm",
@@ -88,18 +87,18 @@ $jsonFlex = [
           "type": "uri",
           "label": "เข้าเว็บไซต์",
           "uri": "http://srw889th.com/"
-      },
+      ],
         "color": "#FB0101",
         "style": "secondary"
-      },
-      {
+      ],
+      ]
         "type": "spacer",
         "size": "sm"
-      }
+      ]
     ],
     "flex": 0
-  }
-}
+  ]
+]
 ];
 
 
