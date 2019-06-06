@@ -11,28 +11,49 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
-$jsonFlex = {
-    {
-	"type": "bubble",
-	"direction": "ltr",
-	"styles": {
-		"header": {
-			"backgroundColor": "#ffaaaa",
-		},
-		"body": {
-			"backgroundColor": "#aaffaa",
-			"separator": true,
-			"separatorColor": "#efefef"
-		},
-		"footer": {
-			"backgroundColor": "#aaaaff"
-		}
-	},
-	"header": {},
-	"hero": {},
-	"body": {},
-	"footer": {}
-}
+$jsonFlex = [
+ "type" => "bubble",
+  "header" => {
+    "type" => "box",
+    "layout" => "vertical",
+    "contents" => [
+      [
+        "type" => "text",
+        "text" => "header"
+      ]
+    ]
+  ],
+  "hero" => [
+    "type" => "image",
+    "url" => "https://www.linefriends.com/img/img_sec.jpg",
+    "size"=> "full",
+    "aspectRatio" => "2:1"
+  ],
+  "body" => [
+    "type" => "box",
+    "layout" => "vertical",
+    "contents" => [
+      [
+        "type" => "text",
+        "text" => "body"
+      ],
+	  [
+        "type" => "text",
+        "text" => "body"
+      ]
+    ]
+  ],
+  "footer" => [
+    "type" => "box",
+    "layout" => "vertical",
+    "contents" => [
+      [
+        "type" => "text",
+        "text" => "footer"
+      ]
+    ]
+  ]
+];
 
 
 
