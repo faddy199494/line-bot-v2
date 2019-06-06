@@ -66,8 +66,8 @@ $jsonFlex = [
         "type" => "box",
         "layout" => "vertical",
         "contents" => [
+          ],
           [
-        ],
             "type" => "separator",
             "color" => "#C3C3C3"
           ],
