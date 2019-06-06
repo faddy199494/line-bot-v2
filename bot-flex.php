@@ -12,128 +12,131 @@ $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
 $jsonFlex = [
-    "type" => "flex",
-    "altText" => "Slot889th Flex Message",
-    "contents" => [
-      "type" => "bubble",
-      "direction" => "ltr",
-      "header" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "🔔ยินดีต้อนรับสู่ SLOT889TH🔔",
-            "align" => "center",
-            "size" => "sm",
-            "align" => "start",
-            "weight" => "bold",
-            "color" => "#009813"
-          ],
-          [
-            "type" => "text",
-            "text" => " 📢 สมัครได้เเล้ววันนี้ฟรี 100 Credit 🚩",
-            "align" => "center",
-            "size" => "xs",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "มีโปรโมชั่นหลากหลายให้คุณเลือก",
-            "align" => "center",
-            "size" => "xs",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "รับประกัน ฝาก-ถอน 100%",
-            "align" => "center",
-            "size" => "xs",
-            "color" => "#B2B2B2"
-          ],
-          [
-            "type" => "text",
-            "text" => "Payment complete.",
-            "margin" => "lg",
-            "size" => "lg",
-            "color" => "#000000"
-          ]
-        ]
-      ],
-      "body" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
-          [
-            "type" => "separator",
-            "color" => "#C3C3C3"
-          ],
-          [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "Merchant",
-                "align" => "start",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "BTS 01",
-                "align" => "end",
-                "color" => "#000000"
-              ]
-            ]
-          ],
-          [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "New balance",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "฿ 45.57",
-                "align" => "end"
-              ]
-            ]
-          ],
-          [
-            "type" => "separator",
-            "margin" => "lg",
-            "color" => "#C3C3C3"
-          ]
-        ]
-      ],
-      "footer" => [
-        "type" => "box",
-        "layout" => "horizontal",
-        "contents" => [
-          [
-           "type" => "text",
-            "text" => "เข้าเว็บไซต์",
-            "align" => "center", 
-            "size" => "lg",
-            "align" => "start",
-            "color" => "#0084B6",
-            "action" => [
-              "type" => "uri",
-              "label" => "เข้าเว็บไซต์",
-              "uri" => "http://srw889th.com/"
-            ]
-          ]
-        ]
-      ]
-    ]
-  ];
+    array (
+  'type' => 'flex',
+  'altText' => 'Flex Message',
+  'contents' => 
+  array (
+    'type' => 'bubble',
+    'direction' => 'ltr',
+    'header' => 
+    array (
+      'type' => 'box',
+      'layout' => 'vertical',
+      'contents' => 
+      array (
+        0 => 
+        array (
+          'type' => 'text',
+          'text' => '📢 ยินดีต้อนรับสู่ SLOT889TH 🔔',
+          'align' => 'center',
+        ),
+        1 => 
+        array (
+          'type' => 'text',
+          'text' => '😍สมัครได้เเล้ววันนี้ฟรี 100 Credit😍',
+          'margin' => 'lg',
+          'size' => 'sm',
+          'align' => 'center',
+          'color' => '#000000',
+        ),
+      ),
+    ),
+    'hero' => 
+    array (
+      'type' => 'image',
+      'url' => 'https://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg',
+      'size' => 'full',
+      'aspectRatio' => '1:1',
+      'aspectMode' => 'fit',
+      'action' => 
+      array (
+        'type' => 'uri',
+        'label' => 'line@',
+        'uri' => 'https://line.me/R/ti/p/@sny7726x',
+      ),
+    ),
+    'body' => 
+    array (
+      'type' => 'box',
+      'layout' => 'vertical',
+      'contents' => 
+      array (
+        0 => 
+        array (
+          'type' => 'separator',
+        ),
+        1 => 
+        array (
+          'type' => 'box',
+          'layout' => 'baseline',
+          'margin' => 'lg',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'text',
+              'text' => '💎 มีโปรโมชั่นให้คุณเลือกมากมาย 💎',
+              'size' => 'sm',
+              'align' => 'center',
+              'color' => '#000000',
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          'type' => 'box',
+          'layout' => 'baseline',
+          'margin' => 'lg',
+          'contents' => 
+          array (
+            0 => 
+            array (
+              'type' => 'text',
+              'text' => ' 💰 รับประกัน ฝาก-ถอน 100% 💰',
+              'size' => 'sm',
+              'align' => 'center',
+            ),
+          ),
+        ),
+        3 => 
+        array (
+          'type' => 'separator',
+          'margin' => 'lg',
+          'color' => '#C3C3C3',
+        ),
+        4 => 
+        array (
+          'type' => 'button',
+          'action' => 
+          array (
+            'type' => 'uri',
+            'label' => 'สมัครสมาชิก',
+            'uri' => 'https://line.me/R/ti/p/@sny7726x',
+          ),
+          'color' => '#03FF0C',
+          'style' => 'secondary',
+        ),
+        5 => 
+        array (
+          'type' => 'button',
+          'action' => 
+          array (
+            'type' => 'uri',
+            'label' => 'เข้าเว็บไซต์',
+            'uri' => 'http://srw889th.com',
+          ),
+          'color' => '#FB0101',
+          'style' => 'secondary',
+        ),
+        6 => 
+        array (
+          'type' => 'separator',
+        ),
+      ),
+    ),
+  ),
+)
 
 
 if ( sizeof($request_array['events']) > 0 ) {
