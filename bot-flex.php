@@ -60,18 +60,6 @@ $jsonFlex = [
           ]
         ]
       ],  
-      "hero" => [
-        "type" => "image",
-        "url" => "https://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
-        "size" => "full",
-        "aspectRatio" => "1:1",
-        "aspectMode" => "fit",
-        "action" => [
-        "type" => "uri",
-        "label" => "line@",
-        "uri" => "https://line.me/R/ti/p/@sny7726x"
-       ]
-     ], 
       [
       "body" => [
         "type" => "box",
