@@ -13,7 +13,7 @@ $request_array = json_decode($request, true);   // Decode JSON to Array
 
 $jsonFlex = [
     "type" => "flex",
-    "altText" => "Hello Flex Message",
+    "altText" => "Slot889th Flex Message",
     "contents" => [
       "type" => "bubble",
       "direction" => "ltr",
@@ -23,29 +23,33 @@ $jsonFlex = [
         "contents" => [
           [
             "type" => "text",
-            "text" => "Purchase",
-            "size" => "lg",
+            "text" => "🔔ยินดีต้อนรับสู่ SLOT889TH🔔",
+            "align" => "center",
+            "size" => "sm",
             "align" => "start",
             "weight" => "bold",
             "color" => "#009813"
           ],
           [
             "type" => "text",
-            "text" => "฿ 100.00",
-            "size" => "3xl",
+            "text" => " 📢 สมัครได้เเล้ววันนี้ฟรี 100 Credit 🚩",
+            "align" => "center",
+            "size" => "xs",
             "weight" => "bold",
             "color" => "#000000"
           ],
           [
             "type" => "text",
-            "text" => "Rabbit Line Pay",
-            "size" => "lg",
+            "text" => "มีโปรโมชั่นหลากหลายให้คุณเลือก",
+            "align" => "center",
+            "size" => "xs",
             "weight" => "bold",
             "color" => "#000000"
           ],
           [
             "type" => "text",
-            "text" => "2019.02.14 21:47 (GMT+0700)",
+            "text" => "รับประกัน ฝาก-ถอน 100%",
+            "align" => "center",
             "size" => "xs",
             "color" => "#B2B2B2"
           ],
@@ -114,15 +118,19 @@ $jsonFlex = [
         "layout" => "horizontal",
         "contents" => [
           [
-            "type" => "text",
-            "text" => "View Details",
+            "type" => "button",
+            "text" => "เข้าเว็บไซต์",
             "size" => "lg",
             "align" => "start",
             "color" => "#0084B6",
             "action" => [
               "type" => "uri",
-              "label" => "View Details",
-              "uri" => "https://google.co.th/"
+              "label" => "เข้าเว็บไซต์",
+              "uri" => "http://srw889th.com/",
+              ],
+              "color": "#FB0101",
+              "style": "secondary"
+              ],
             ]
           ]
         ]
