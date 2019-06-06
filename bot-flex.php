@@ -67,14 +67,6 @@ $jsonFlex = [
         "layout" => "vertical",
         "contents" => [
           [
-          "type" => "image",
-          "url" => "https://developers.line.biz/assets/images/services/bot-designer-icon.png",
-          "size" => "full",
-          "action" => [
-            "type" => "uri",
-            "label" => "register",
-            "uri" => "https://line.me/R/ti/p/@sny7726x"
-          ]
         ],
             "type" => "separator",
             "color" => "#C3C3C3"
