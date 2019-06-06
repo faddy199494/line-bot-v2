@@ -116,7 +116,7 @@ $jsonFlex = [
         "layout" => "horizontal",
         "contents" => [
           [
-           "type" => "text",
+            "type" => "text",
             "text" => "View Details",
             "size" => "lg",
             "align" => "start",
