@@ -54,10 +54,10 @@ $jsonFlex = [
             "color" => "#B2B2B2"
           ],
           [
-            "type" => "text",
-            "text" => "Payment complete.",
+            "type" => "image",
+            "url" => "Phttps://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
+            "size" => "full",
             "margin" => "lg",
-            "size" => "lg",
             "color" => "#000000"
           ]
         ]
