@@ -11,8 +11,8 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
-$jsonFlex = (
-    array (
+
+  array (
   'type' => 'flex',
   'altText' => 'Flex Message',
   'contents' => 
