@@ -13,7 +13,7 @@ $request_array = json_decode($request, true);   // Decode JSON to Array
 
 $jsonFlex = [
     "type" => "flex",
-    "altText" => "Hello Flex Message",
+    "altText" => "Slot889th Flex Message",
     "contents" => [
       "type" => "bubble",
       "direction" => "ltr",
@@ -24,6 +24,7 @@ $jsonFlex = [
           [
             "type" => "text",
             "text" => "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
+            "align" => "center",
             "size" => "sm",
             "align" => "start",
             "weight" => "bold",
