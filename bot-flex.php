@@ -55,10 +55,15 @@ $jsonFlex = [
           ],
           [
             "type" => "text",
-            "text" => "Payment complete.",
-            "margin" => "lg",
+            "text" => "สมัครสมาชิก",
+            "align" => "center", 
             "size" => "lg",
-            "color" => "#000000"
+            "align" => "start",
+            "color" => "#0084B6",
+            "action" => [
+              "type" => "uri",
+              "label" => "สมัครสมาชิก",
+              "uri" => "https://line.me/R/ti/p/@sny7726x"
           ]
         ]
       ],
