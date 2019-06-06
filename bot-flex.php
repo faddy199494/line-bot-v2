@@ -100,6 +100,7 @@ $jsonFlex = [
     "flex": 0
   }
 }
+];
 
 
 if ( sizeof($request_array['events']) > 0 ) {
