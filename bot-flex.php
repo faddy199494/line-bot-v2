@@ -12,129 +12,42 @@ $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
 $jsonFlex = [
-    "type" => "flex",
-    "altText" => "Slot889th Flex Message",
-    "contents" => [
-      "type" => "bubble",
-      "direction" => "ltr",
-      "header" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
-            "align" => "center",
-            "size" => "sm",
-            "align" => "start",
-            "weight" => "bold",
-            "color" => "#009813"
-          ],
-          [
-            "type" => "text",
-            "text" => "😍สมัครได้เเล้ววันนี้ฟรี 100 Credit😍",
-            "align" => "center",
-            "size" => "sm",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "image",
-            "url" => "https://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
-            "size" => "full",
-            "aspectRatio" => "1:1",
-            "aspectMode" => "fit",
-            "action" => [
-            "type" => "uri",
-            "label" => "line@",
-            "uri" => "https://line.me/R/ti/p/@sny7726x"
-          ],
-          [
-            "type" => "text",
-            "text" => "2019.02.14 21:47 (GMT+0700)",
-            "size" => "xs",
-            "color" => "#B2B2B2"
-          ],
-          [
-            "type" => "text",
-            "text" => "Payment complete.",
-            "margin" => "lg",
-            "size" => "lg",
-            "color" => "#000000"
-          ]
-        ]
-      ],
-      "body" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
-          [
-            "type" => "separator",
-            "color" => "#C3C3C3"
-          ],
-          [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "Merchant",
-                "align" => "start",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "BTS 01",
-                "align" => "end",
-                "color" => "#000000"
-              ]
-            ]
-          ],
-          [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "New balance",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "฿ 45.57",
-                "align" => "end"
-              ]
-            ]
-          ],
-          [
-            "type" => "separator",
-            "margin" => "lg",
-            "color" => "#C3C3C3"
-          ]
-        ]
-      ],
-      "footer" => [
-        "type" => "box",
-        "layout" => "horizontal",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "View Details",
-            "size" => "lg",
-            "align" => "start",
-            "color" => "#0084B6",
-            "action" => [
-              "type" => "uri",
-              "label" => "View Details",
-              "uri" => "https://google.co.th/"
-            ]
-          ]
-        ]
-      ]
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "uri",
+          "label": "Primary style button",
+          "uri": "https://developers.line.me"
+        }
+      },
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "Secondary style button",
+          "uri": "https://developers.line.me"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "action": {
+          "type": "uri",
+          "label": "Link style button",
+          "uri": "https://developers.line.me"
+        }
+      }
     ]
-  ];
+  }
+];
 
 
 if ( sizeof($request_array['events']) > 0 ) {
