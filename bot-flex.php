@@ -12,94 +12,125 @@ $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
 $jsonFlex = [
-  "type" => "bubble",
-  "hero" => [
-    "type" => "image",
-    "url" => "https://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
-    "size" => "full",
-    "aspectRatio" => "1:1",
-    "aspectMode" => "cover",
-    "action" => [
-      "type" => "uri",
-      "label" => "line@",
-      "uri" => "https://line.me/R/ti/p/@sny7726x"
-    ]
-  ],
-  "body" => [
-    "type" => "box",
-    "layout" => "vertical",
+"type" => "flex",
+    "altText" => "SLOT889TH",
     "contents" => [
-      [
-        "type" => "text",
-        "text" => "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
-        "weight" => "bold",
-        "align" => "center",
-        "size" => "sm"
-      ],
-      [
+      "type" => "bubble",
+      "direction" => "ltr",
+      "header" => [
         "type" => "box",
         "layout" => "vertical",
-        "margin" => "lg",
-        "spacing" => "sm",
         "contents" => [
+          [
+            "type" => "text",
+            "text" => "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
+            "size" => "sm",
+			      "align" => "center",
+            "align" => "start",
+            "weight" => "bold",
+            "color" => "#009813"
+          ],
+          [
+            "type" => "text",
+            "text" => "😍สมัครได้เเล้ววันนี้ฟรี 100 Credit😍",
+            "size" => "sm",
+			      "align" => "center",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "Rabbit Line Pay",
+            "size" => "lg",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "2019.02.14 21:47 (GMT+0700)",
+            "size" => "xs",
+            "color" => "#B2B2B2"
+          ],
+          [
+            "type" => "text",
+            "text" => "Payment complete.",
+            "margin" => "lg",
+            "size" => "lg",
+            "color" => "#000000"
+          ]
+        ]
+      ],
+      "body" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
+          [
+            "type" => "separator",
+            "color" => "#C3C3C3"
+          ],
           [
             "type" => "box",
             "layout" => "baseline",
-            "spacing" => "sm",
+            "margin" => "lg",
             "contents" => [
               [
                 "type" => "text",
-                "text" => "😍สมัครได้เเล้ววันนี้ฟรี 100 Credit😍",
-                "wrap" => true,
-                "color" => "#666666",
-                "size" => "sm",
-                "align" => "center",
-                "flex" => 5
+                "text" => "Merchant",
+                "align" => "start",
+                "color" => "#C3C3C3"
+              ],
+              [
+                "type" => "text",
+                "text" => "BTS 01",
+                "align" => "end",
+                "color" => "#000000"
               ]
             ]
+          ],
+          [
+            "type" => "box",
+            "layout" => "baseline",
+            "margin" => "lg",
+            "contents" => [
+              [
+                "type" => "text",
+                "text" => "New balance",
+                "color" => "#C3C3C3"
+              ],
+              [
+                "type" => "text",
+                "text" => "฿ 45.57",
+                "align" => "end"
+              ]
+            ]
+          ],
+          [
+            "type" => "separator",
+            "margin" => "lg",
+            "color" => "#C3C3C3"
+          ]
+        ]
+      ],
+      "footer" => [
+        "type" => "box",
+        "layout" => "horizontal",
+        "contents" => [
+          [
+            "type" => "text",
+            "text" => "View Details",
+            "size" => "lg",
+            "align" => "start",
+            "action" => [
+              "type" => "uri",
+              "label" => "View Details",
+              "uri" => "https://google.co.th/"
+            ]
+            "color" => "#0084B6",
           ]
         ]
       ]
     ]
-  ],
-  "footer" => [
-    "type" => "box",
-    "layout" => "vertical",
-    "spacing" => "sm",
-    "contents" => [
-      [
-        "type" => "button",
-        "style" => "link",
-        "height" => "sm",
-        "action" => {
-          "type" => "uri",
-          "label" => "สมัครสมาชิก",
-          "uri" => "https://line.me/R/ti/p/@sny7726x"
-        ],
-        "color" => "#03FF0C",
-        "style" => "secondary"
-      ],
-      [
-        "type" => "button",
-        "style" => "link",
-        "height" => "sm",
-        "action" => {
-          "type" => "uri",
-          "label" => "เข้าเว็บไซต์",
-          "uri" => "http://srw889th.com/"
-      ],
-        "color" => "#FB0101",
-        "style" => "secondary"
-      ],
-      ]
-        "type" => "spacer",
-        "size" => "sm"
-      ]
-    ],
-    "flex" => 0
-  ]
-]
-];
+  ];
 
 
 if ( sizeof($request_array['events']) > 0 ) {
