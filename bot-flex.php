@@ -57,7 +57,8 @@ $jsonFlex = [
             "type" => "image",
             "url" => "Phttps://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
             "size" => "full",
-            "margin" => "lg",
+            "aspectRatio" => "1:1",
+            "aspectMode" => "fit",
             "color" => "#000000"
           ]
         ]
