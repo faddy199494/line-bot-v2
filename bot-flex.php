@@ -23,8 +23,8 @@ $jsonFlex = [
         "contents" => [
           [
             "type" => "text",
-            "text" => "test",
-            "size" => "lg",
+            "text" => "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
+            "size" => "sm",
             "align" => "start",
             "weight" => "bold",
             "color" => "#009813"
