@@ -25,7 +25,6 @@ $jsonFlex = [
             "type" => "text",
             "text" => "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
             "size" => "sm",
-			      "align" => "center",
             "align" => "start",
             "weight" => "bold",
             "color" => "#009813"
@@ -34,7 +33,6 @@ $jsonFlex = [
             "type" => "text",
             "text" => "😍สมัครได้เเล้ววันนี้ฟรี 100 Credit😍",
             "size" => "sm",
-			      "align" => "center",
             "weight" => "bold",
             "color" => "#000000"
           ],
