@@ -54,11 +54,10 @@ $jsonFlex = [
             "color" => "#B2B2B2"
           ],
           [
-            "type" => "image",
-            "url" => "Phttps://sv1.picz.in.th/images/2019/06/06/1z3MvD.jpg",
-            "size" => "full",
-            "aspectRatio" => "1:1",
-            "aspectMode" => "fit",
+            "type" => "text",
+            "text" => "Payment complete.",
+            "margin" => "lg",
+            "size" => "lg",
             "color" => "#000000"
           ]
         ]
@@ -68,6 +67,15 @@ $jsonFlex = [
         "layout" => "vertical",
         "contents" => [
           [
+          "type" => "image",
+          "url" => "https://developers.line.biz/assets/images/services/bot-designer-icon.png",
+          "size" => "full",
+          "action" => [
+            "type" => "uri",
+            "label" => "register",
+            "uri" => "https://line.me/R/ti/p/@sny7726x"
+          ]
+        ],
             "type" => "separator",
             "color" => "#C3C3C3"
           ],
