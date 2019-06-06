@@ -12,8 +12,8 @@ $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
 $jsonFlex = [
-"type" => "flex",
-    "altText" => "SLOT889TH",
+    "type" => "flex",
+    "altText" => "Hello Flex Message",
     "contents" => [
       "type" => "bubble",
       "direction" => "ltr",
@@ -23,16 +23,16 @@ $jsonFlex = [
         "contents" => [
           [
             "type" => "text",
-            "text" => "📢 ยินดีต้อนรับสู่ SLOT889TH 🔔",
-            "size" => "sm",
+            "text" => "Purchase",
+            "size" => "lg",
             "align" => "start",
             "weight" => "bold",
             "color" => "#009813"
           ],
           [
             "type" => "text",
-            "text" => "😍สมัครได้เเล้ววันนี้ฟรี 100 Credit😍",
-            "size" => "sm",
+            "text" => "฿ 100.00",
+            "size" => "3xl",
             "weight" => "bold",
             "color" => "#000000"
           ],
@@ -118,12 +118,12 @@ $jsonFlex = [
             "text" => "View Details",
             "size" => "lg",
             "align" => "start",
+            "color" => "#0084B6",
             "action" => [
               "type" => "uri",
               "label" => "View Details",
               "uri" => "https://google.co.th/"
             ]
-            "color" => "#0084B6",
           ]
         ]
       ]
